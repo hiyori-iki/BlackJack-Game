@@ -1,0 +1,37 @@
+body{
+    text-align: center;
+    background-image: url(BlackjackRoyalPairs.jpg);
+    background-size: cover;
+    height: 100vh;
+}
+h1{
+    color: goldenrod;
+    font: bold;
+    font-size: 50px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+p{
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#message-el{
+    font-style: italic;
+    font-size: 30px;
+}
+button{
+    background-color: goldenrod;
+    border: none;
+    color:darkgreen;
+    width: 280px;
+    margin-bottom: 7px;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 23px;
+    border-radius: 3px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
