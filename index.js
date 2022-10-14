@@ -11,7 +11,7 @@ let cardsEl=document.querySelector("#card-el")
 
 function randomNumberGenerator()
 {
-    let randomNumber = (Math.random() * 12 )+1
+    let randomNumber = (Math.random() * 11 )+1
 
     return Math.floor(randomNumber)
 }
