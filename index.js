@@ -15,7 +15,6 @@ function randomNumberGenerator()
 
     return Math.floor(randomNumber)
 }
-randomNumberGenerator()
 function startGame()
 {
     renderGame()
