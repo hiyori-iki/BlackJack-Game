@@ -1,14 +1,21 @@
-let firstCard = 10
-let secondCard = 7
+let firstCard = randomNumberGenerator()
+let secondCard = randomNumberGenerator()
 let sum = firstCard + secondCard
 let cards=[firstCard,secondCard]
-let n=2
 let hasBlackJack = false
 let isAlive = true
 let message = ""
 let messageEl=document.getElementById("message-el")
 let sumEl=document.querySelector("#sum-el")
 let cardsEl=document.querySelector("#card-el")
+
+function randomNumberGenerator()
+{
+    let randomNumber = (Math.random() * 12 )+1
+
+    return Math.floor(randomNumber)
+}
+randomNumberGenerator()
 function startGame()
 {
     renderGame()
@@ -17,7 +24,7 @@ function startGame()
 function renderGame()
 {
     cardsEl.textContent="Cards:"
-    for(let i=0; i<n; i++ )
+    for(let i=0; i<cards.length; i++ )
     {
         cardsEl.textContent+=" "+cards[i]
     }
@@ -39,9 +46,8 @@ function renderGame()
 function newcard()
 {
     console.log("Drwaing a new card from the deck")
-    let newCard=4
+    let newCard=randomNumberGenerator()
     cards.push(newCard)
-    n++;
     sum+=newCard
     renderGame()
 }
