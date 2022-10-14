@@ -12,8 +12,19 @@ let cardsEl=document.querySelector("#card-el")
 function randomNumberGenerator()
 {
     let randomNumber = (Math.random() * 12)+1
-
-    return Math.floor(randomNumber)
+    flooredValue=Math.floor(randomNumber)
+    if(flooredValue==1)
+    {
+        return 11
+    }
+    else if(flooredValue>10)
+    {
+        return 10
+    }
+    else
+    {
+        return flooredValue
+    }
 }
 function startGame()
 {
