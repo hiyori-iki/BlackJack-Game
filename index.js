@@ -6,6 +6,14 @@ let message = ""
 let messageEl=document.getElementById("message-el")
 let sumEl=document.querySelector("#sum-el")
 let cardsEl=document.querySelector("#card-el")
+let player=
+{
+    name :"Hiyori",
+    chips:145
+
+}
+playerEl=document.getElementById("player-el")
+playerEl.innerText=player.name +": $"+player.chips
 
 function randomNumberGenerator()
 {
